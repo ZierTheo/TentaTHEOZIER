@@ -484,11 +484,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1585940699421972165, guid: dd828aa94b024b346b64ef27d2423cde, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.5050917
+      value: 7.1
       objectReference: {fileID: 0}
     - target: {fileID: 1585940699421972165, guid: dd828aa94b024b346b64ef27d2423cde, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5606642
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1585940699421972165, guid: dd828aa94b024b346b64ef27d2423cde, type: 3}
       propertyPath: m_LocalPosition.z
@@ -525,6 +525,14 @@ PrefabInstance:
     - target: {fileID: 3306981103639269860, guid: dd828aa94b024b346b64ef27d2423cde, type: 3}
       propertyPath: m_Name
       value: NPC PREFAB
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629570656029051703, guid: dd828aa94b024b346b64ef27d2423cde, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670870796720798077, guid: dd828aa94b024b346b64ef27d2423cde, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1070,6 +1078,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1585940699421972165, guid: dd828aa94b024b346b64ef27d2423cde, type: 3}
   m_PrefabInstance: {fileID: 690910115}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &1091200846 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8670870796720798077, guid: dd828aa94b024b346b64ef27d2423cde, type: 3}
+  m_PrefabInstance: {fileID: 690910115}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1233198391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1318,18 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1091200846}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+        m_MethodName: MoveRotation
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
